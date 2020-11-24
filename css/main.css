@@ -33,7 +33,7 @@ li {
     margin: 5px 20px;
 }
 
-.nav__menu-item:hover,
+.nav__menu-item > a:hover,
 .nav__menu-item > a:focus {
     outline: thin solid #a3a2a2;
     background-color: #c2c2c2;
@@ -110,7 +110,11 @@ label > img:hover,
     width: 29%;
     height: 22%;
 }
-
+.submenu__list-item:hover,
+.submenu__list-item:focus {
+    outline: thin solid #c2c2c2;
+    background-color: #c2c2c2;
+}
 .submenu__list-item img {
     max-width: 90%;
     max-height: 60%;
