@@ -4,9 +4,11 @@
     box-sizing: border-box;
     text-align: center;
 }
+
 img {
     vertical-align: middle;
 }
+
 li {
     list-style-type: none;
 }
@@ -18,18 +20,20 @@ li {
     font-size: 20px;
     height: 50px;
 }
+
 .nav__menu-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
+
 .nav__menu-item {
     position: relative;
     margin: 5px 20px;
 }
 
-a:hover,
+.nav__menu-item:hover,
 .nav__menu-item > a:focus {
     outline: thin solid #a3a2a2;
     background-color: #c2c2c2;
@@ -41,21 +45,18 @@ a:visited {
     text-decoration: none;
 }
 
-.popup-btn > img:focus,
+label > img:focus,
 label > img:hover,
-.submenu:hover,
-.submenu:focus {
+.popup__menu:hover,
+.popup__menu:focus {
     cursor: pointer;
     outline: thin solid #a3a2a2;
     background-color: #c2c2c2;
 }
 
-input[type=checkbox] {
-    display: none;
-}
-
 .submenu__list, 
-.more__popup-menu {
+.more__popup-menu,
+.more__popup {
     display: none;
 }
 
@@ -64,10 +65,8 @@ input[type=checkbox] {
     height: 100%;
     width: 100%;
     position: absolute;
-    
-}
-
-.popup__menu:focus {
+    z-index: -1;
+    appearance: none;
     outline: none;
 }
 
@@ -89,11 +88,6 @@ input[type=checkbox] {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     font-size: 0.7em;
     line-height: 1.5em;
-}
-
-.popup-image:focus {
-    outline: thin solid #c2c2c2;
-    background-color: transparent;
 }
 
 .submenu__list-item a {
@@ -136,6 +130,7 @@ input[type=checkbox] {
     outline: thin solid #c2c2c2;
     background-color: transparent;
 }
+
 #more-popup:checked ~ .more__popup-menu {
     max-width: 100%;
     position: relative;
@@ -147,6 +142,7 @@ input[type=checkbox] {
     justify-content: space-around;
     line-height: 1.5em;
 }
+
 #more-popup:checked ~ .more__popup-menu::before {
     content: "";
     width: 100%;
@@ -163,15 +159,16 @@ input[type=checkbox] {
     padding: 10px 155px;
     background-color: #e9e3e3;
 }
-.more__submenu:hover {
+
+.more__submenu:hover,
+.more__submenu:focus,
+.more__popup-link:focus {
     cursor: pointer;
+    outline: thin solid #c2c2c2;
+    background-color:  #b3b3b3;
 }
+
 .more__popup-link {
     padding: 10px 90px;
     background-color: #e9e3e3;
-}
-.more__popup-link:focus {
-    outline: thin solid #c2c2c2;
-    border-radius: 5px;
-    background-color:  #b3b3b3;
 }
