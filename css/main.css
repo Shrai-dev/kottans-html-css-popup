@@ -166,6 +166,7 @@ label > img:hover,
 
 .more__submenu:hover,
 .more__submenu:focus,
+.more__popup-link:hover,
 .more__popup-link:focus {
     cursor: pointer;
     outline: thin solid #c2c2c2;
