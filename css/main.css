@@ -89,6 +89,11 @@ label > img:hover,
     line-height: 1.5em;
 }
 
+.popup-image {
+    width: 35px;
+    height: 35px;
+}
+
 .submenu__list-item a {
     display: flex;
     flex-direction: column;
@@ -175,4 +180,13 @@ label > img:hover,
 .more__popup-link {
     padding: 10px 90px;
     background-color: #e9e3e3;
+}
+
+.notification {
+    width: 25px;
+    height: 30px;
+}
+
+.user {
+    width: 30px;
 }
